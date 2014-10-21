@@ -1,0 +1,32 @@
+{
+  "name": "tors0x",
+  "version": "0.1.0",
+  "description": "A nodejs lib for controlling a tosr0x board",
+  "homepage": "https://github.com/DeuxHuitHuit/node-tors0x",
+  "author": {
+    "name": "Deux Huit Huit",
+    "url": "http://www.deuxhuithuit.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DeuxHuitHuit/node-tors0x.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DeuxHuitHuit/node-tors0x/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://deuxhuithuit.mit-license.org/"
+    }
+  ],
+  "scripts": {
+    "start": "node app"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "2.0.x"
+  },
+  "dependencies": {},
+  "keywords": [],
+}
