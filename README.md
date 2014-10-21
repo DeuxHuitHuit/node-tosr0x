@@ -1,6 +1,6 @@
 # node-tosr0x
 
-> A nodejs lib for controlling a tosr0x board
+> A nodejs lib for controlling a tosr0x board via USB port
 
 ## Inspiration/References
 

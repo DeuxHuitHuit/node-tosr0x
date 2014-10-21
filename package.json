@@ -1,7 +1,7 @@
 {
   "name": "tors0x",
   "version": "0.1.0",
-  "description": "A nodejs lib for controlling a tosr0x board",
+  "description": "A nodejs lib for controlling a tosr0x board via USB port",
   "homepage": "https://github.com/DeuxHuitHuit/node-tors0x",
   "author": {
     "name": "Deux Huit Huit",
@@ -28,5 +28,9 @@
     "npm": "2.0.x"
   },
   "dependencies": {},
-  "keywords": [],
+  "keywords": [
+    "tosr0x",
+    "serial",
+    "usb"
+  ],
 }
