@@ -5,7 +5,7 @@
   "homepage": "https://github.com/DeuxHuitHuit/node-tors0x",
   "author": {
     "name": "Deux Huit Huit",
-    "url": "http://www.deuxhuithuit.com/"
+    "url": "https://deuxhuithuit.com/"
   },
   "repository": {
     "type": "git",
@@ -23,14 +23,17 @@
   "scripts": {
     "start": "node app"
   },
+  "main": "lib/tors0x.js",
   "engines": {
     "node": "0.10.x",
     "npm": "2.0.x"
   },
-  "dependencies": {},
   "keywords": [
     "tosr0x",
     "serial",
     "usb"
   ],
+  "dependencies": {
+    "serialport": "^1.4.6"
+  }
 }
