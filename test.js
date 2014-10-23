@@ -5,7 +5,7 @@ Tosr0x.portScan(function (ctl) {
 	ctl.open(function (ctl) {
 		console.log('Connected!!!');
 		ctl.version(function (data) {
-			console.log('Version is ' + data);
+			console.log('Version is ' + data.toString());
 			console.log('Turning realy 1 on');
 			ctl.on(1, function () {
 				console.log('Relay one is on!!!');
