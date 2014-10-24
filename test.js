@@ -1,5 +1,5 @@
 var Tosr0x = require('./lib/tosr0x').Tosr0x;
-
+var relay = 1;
 var ctl;
 
 //Tosr0x.fromPortScan(null, function (err, ctl) {
@@ -15,18 +15,22 @@ Tosr0x.fromPortScan().then(function (c) {
 })
 .then(function (version) {
 	console.log('Version is ' + version);
+	return ctl.voltage();
+})
+.then(function (voltage) {
+	console.log('Voltage is ' + voltage);
 	return ctl.refreshStates();
 })
 .then(function (states) {
 	console.log('State', states);
 })
 .then(function () {
-	console.log('Turning realy 1 on');
+	console.log('Turning realy ' + relay + ' on');
 	//ctl.on(1, function () {
-	return ctl.on(0);
+	return ctl.on(relay);
 })
 .then(function () {
-	console.log('Relay one is on!!!');
+	console.log('Relay ' + relay + ' is on!!!');
 	return new (require('rsvp').Promise)(function (res, rej) {
 		setTimeout(function () {
 			res();
@@ -34,7 +38,7 @@ Tosr0x.fromPortScan().then(function (c) {
 	});
 })
 .then(function () {
-	return ctl.off(0);
+	return ctl.off(relay);
 })
 .then(function () {
 	return ctl.close();
