@@ -1,18 +1,18 @@
 {
-  "name": "tors0x",
+  "name": "tosr0x",
   "version": "0.1.0",
   "description": "A nodejs lib for controlling a tosr0x board via USB port",
-  "homepage": "https://github.com/DeuxHuitHuit/node-tors0x",
+  "homepage": "https://github.com/DeuxHuitHuit/node-tosr0x",
   "author": {
     "name": "Deux Huit Huit",
     "url": "https://deuxhuithuit.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/DeuxHuitHuit/node-tors0x.git"
+    "url": "git://github.com/DeuxHuitHuit/node-tosr0x.git"
   },
   "bugs": {
-    "url": "https://github.com/DeuxHuitHuit/node-tors0x/issues"
+    "url": "https://github.com/DeuxHuitHuit/node-tosr0x/issues"
   },
   "licenses": [
     {
@@ -23,7 +23,7 @@
   "scripts": {
     "start": "node test"
   },
-  "main": "lib/tors0x.js",
+  "main": "lib/tosr0x.js",
   "engines": {
     "node": "0.10.x",
     "npm": "2.0.x"
