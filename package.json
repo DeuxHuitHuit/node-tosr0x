@@ -21,7 +21,7 @@
     }
   ],
   "scripts": {
-    "start": "node app"
+    "start": "node test"
   },
   "main": "lib/tors0x.js",
   "engines": {

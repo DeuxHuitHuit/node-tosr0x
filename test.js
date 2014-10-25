@@ -1,4 +1,4 @@
-var Tosr0x = require('./lib/tosr0x').Tosr0x;
+var Tosr0x = grequire('./lib/tosr0x').Tosr0x;
 var relay = 1;
 var ctl;
 
