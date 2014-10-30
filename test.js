@@ -1,54 +1,72 @@
+'use strict';
 var Tosr0x = require('./lib/tosr0x').Tosr0x;
 var relay = 1;
-var ctl;
 
-//Tosr0x.fromPortScan(null, function (err, ctl) {
-Tosr0x.fromPortScan().then(function (c) {
-	ctl = c;
+console.time('');
+Tosr0x.create().then(function (ctl) {
 	console.log('Controller found!');
+	console.timeEnd('');
+	console.time('');
 	//ctl.open(function (err, ctl) {
 	return ctl.open();
 })
 .then(function (ctl) {
 	console.log('Connected!!!');
+	console.timeEnd('');
+	console.time('');
 	return ctl.version();
 })
-.then(function (version) {
-	console.log('Version is ' + version);
-	return ctl.voltage();
+.then(function (ret) {
+	console.log('Version is ' + ret.version);
+	console.timeEnd('');
+	console.time('');
+	return ret.ctl.voltage();
 })
-.then(function (voltage) {
-	console.log('Voltage is ' + voltage);
-	return ctl.refreshStates();
+.then(function (ret) {
+	console.log('Voltage is ' + ret.voltage);
+	console.timeEnd('');
+	console.time('');
+	return ret.ctl.refreshStates();
 })
-.then(function (states) {
-	console.log('State', states);
+.then(function (ret) {
+	console.log('State', ret.states);
+	console.timeEnd('');
+	console.time('');
+	return ret.ctl;
 })
-.then(function () {
+.then(function (ctl) {
 	console.log('Turning realy ' + relay + ' on');
+	console.timeEnd('');
+	console.time('');
 	//ctl.on(1, function () {
 	return ctl.on(relay);
 })
-.then(function () {
+.then(function (ret) {
 	console.log('Relay ' + relay + ' is on!!!');
+	console.timeEnd('');
 	return new (require('rsvp').Promise)(function (res, rej) {
 		setTimeout(function () {
-			res();
+			console.time('');
+			res(ret.ctl);
 		}, 2000);
 	});
 })
-.then(function () {
+.then(function (ctl) {
+	console.log('Turning relay ' + relay + ' off');
+	console.timeEnd('');
+	console.time('');
 	return ctl.off(relay);
 })
-.then(function () {
-	return ctl.close();
+.then(function (ret) {
+	console.log('Closing...');
+	console.timeEnd('');
+	console.time('');
+	return ret.ctl.close();
 })
 .catch(function (err) {
 	console.error('ERROR ' + err);
 })
 .finally(function () {
-	if (!!ctl) {
-		ctl.closeImmediate();
-	}
+	console.timeEnd('');
 	console.log('Exit.');
 });
