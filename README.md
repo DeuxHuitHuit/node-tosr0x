@@ -11,8 +11,10 @@ npm i tosr0x --save
 ## Requirements
 
 - node v0.10+
-- A Tosr0x USB board from [TinySine](http://www.tinyosshop.com/) (TOSR02, TOSR04, TOSR08)
 - Being able to compile [serial port](https://github.com/voodootikigod/node-serialport#to-install)
+- A Tosr0x USB board from [TinySine](http://www.tinyosshop.com/) (TOSR02, TOSR04, TOSR08)
+
+![Tosr02](http://www.tinyosshop.com/image/cache/data/Relay%20Boards/TOSR02-1-228x228.jpg)
 
 ## Usage
 
