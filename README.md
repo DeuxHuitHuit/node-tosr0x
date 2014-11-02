@@ -40,7 +40,7 @@ Tosr0x.create(uri).then(function (board) {});
 
 ### Promise usage
 
-The api is 99% built on promises but most method also accepts callbacks.
+The api is 99% built on promises but most methods also accepts callbacks.
 Callbacks should respect the node convention and always have this signature:
 
 ```js
