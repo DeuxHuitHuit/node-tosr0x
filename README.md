@@ -16,7 +16,14 @@ npm i tosr0x --save
 
 ![Tosr02](http://www.tinyosshop.com/image/cache/data/Relay%20Boards/TOSR02-1-228x228.jpg)
 
-## Usage
+## End user projects
+
+This current project only contains an API. End users might want to try those projects in order to directly control the board with nodejs without having to code anything.
+
+- [node-tosr0x-cli](https://github.com/DeuxHuitHuit/node-tosr0x-cli) a command line tool (ideal for cron jobs)
+- [node-tosr0x-server](https://github.com/DeuxHuitHuit/node-tosr0x-server) a web server that connects to a local board to offer remote control (mobile friendly!)
+
+## API Usage
 
 Usage is pretty strait foward: You either create a `Tosr0x` instance or request one.
 
