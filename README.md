@@ -4,18 +4,18 @@
 
 ### TL;DR
 
-- [Installation](#Installation)
-- [Requirements](#Requirements)
-- [End user projects](#End-user-projects)
-- [API Usage](#API-Usage)
-- [Promise usage](#Promise-usage)
-- [API](#API)
-    + [Static methods](#Static-methods)
-    + [Static members](#Static-members)
-    + [Instance methods](#Instance-methods)
-- [Inspiration/References](#InspirationReferences)
-- [Credits](#Credits)
-- [Disclaimer](#Disclaimer)
+- [Installation](#installation)
+- [Requirements](#requirements)
+- [End user projects](#end-user-projects)
+- [API Usage](#api-usage)
+- [Promise usage](#promise-usage)
+- [API](#api)
+    + [Static methods](#static-methods)
+    + [Static members](#static-members)
+    + [Instance methods](#instance-methods)
+- [Inspiration/References](#inspirationreferences)
+- [Credits](#credits)
+- [Disclaimer](#disclaimer)
 
 ## Installation
 
@@ -74,22 +74,22 @@ Optional parameters are inclosed [in brackets]
 The `Tosr0x` constructor. Initialises the `Tosr0x` object.
 
 - uri: string - the port uri locating the usb device.
-- options: object - [options](#Tosr0xdefaults-) for configuring the`Tosr0x` object.
+- options: object - [options](#tosr0xdefaults-) for configuring the`Tosr0x` object.
 
 ### Static methods
 
 #### Tosr0x.fromPortScan([options,] [device,] [callback]) returns Promise
 Scans all serial ports and try to find a match, according to the device parameter.
 
-- options: object - [options](#Tosr0xdefaults-) for configuring the `Tosr0x` object.
-- device: object - [device](#Tosr0xdevice-) serial fingerprint.
+- options: object - [options](#tosr0xdefaults-) for configuring the `Tosr0x` object.
+- device: object - [device](#tosr0xdevice-) serial fingerprint.
 - callback: function - get calls once, with the found device or error.
 
 #### Tosr0x.create([uri,] [options]) returns Promise
 Wraps `Tosr0x.fromPortScan()` and `new Tosr0x()` into a single operation that *always* returns a `Promise`. Also uses the default [device fingerprint](#Tosr0xdevice-).
 
 - uri: string - the port uri locating the usb device.
-- options: object - [options](#Tosr0xdefaults-) for configuring the `Tosr0x` object.
+- options: object - [options](#tosr0xdefaults-) for configuring the `Tosr0x` object.
 
 ### Static members
 These are the method your call directly on the `Tosr0x` object.
