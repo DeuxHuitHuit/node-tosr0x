@@ -1,6 +1,6 @@
 {
   "name": "tosr0x",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "A nodejs lib for controlling a tosr0x board via USB port",
   "homepage": "https://github.com/DeuxHuitHuit/node-tosr0x",
   "author": {
