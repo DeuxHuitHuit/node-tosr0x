@@ -77,6 +77,7 @@ The `Tosr0x` constructor. Initialises the `Tosr0x` object.
 - options: object - [options](#tosr0xdefaults-) for configuring the`Tosr0x` object.
 
 ### Static methods
+These are the method you call directly on the `Tosr0x` object.
 
 #### Tosr0x.fromPortScan([options,] [device,] [callback]) returns Promise
 Scans all serial ports and try to find a match, according to the device parameter.
@@ -92,7 +93,7 @@ Wraps `Tosr0x.fromPortScan()` and `new Tosr0x()` into a single operation that *a
 - options: object - [options](#tosr0xdefaults-) for configuring the `Tosr0x` object.
 
 ### Static members
-These are the method your call directly on the `Tosr0x` object.
+These are the members you can access directly on the `Tosr0x` object.
 
 #### Tosr0x.defaults {}
 Default values for the options parameter.
@@ -113,7 +114,7 @@ Default values for the options parameter.
 };
 ```
 
-Note: serial port specific options should not be change unless you know what your are doing.
+*Note: serial port specific options should not be change unless you know what your are doing.*
 
 #### Tosr0x.device {}
 Default values for device fingerprinting. This should not need to change as they sould remain constant across all boards.
@@ -130,7 +131,7 @@ Default values for device fingerprinting. This should not need to change as they
 ```
 
 #### Tosr0x.commands {}
-Default values for `Tosr0x` binary commands. Note that string values are ASCII chars and integer values are bytes. This should not neet to change and are here for reference only. Please use them in your code (Tosr0x.commands.X) when sending commands.
+Default values for `Tosr0x` binary commands. Note that string values are ASCII chars and integer values are bytes. This should not neet to change and are here for reference only. Please use them in your code (`Tosr0x.commands.X`) when sending commands.
 
 ```js
 {
