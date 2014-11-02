@@ -115,3 +115,7 @@ Made with love in Montréal by <https://deuxhuithuit.com>
 
 Licensed under the MIT License: <http://deuxhuithuit.mit-license.org>
 
+## Disclaimer
+
+We are **not** affiliate with any sort with the usb boards manifacturer or reseller. Please refer to the license of the projet and the licenses emitted by the board manufacturer for all information.
+
