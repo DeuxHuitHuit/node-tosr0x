@@ -33,7 +33,14 @@ Tosr0x.create(uri).then(function (board) {});
 
 ### Promise usage
 
-The api is 99% built on promises but most method also accepts callbacks. The promise implementation currently used is [rsvp.js](https://github.com/tildeio/rsvp.js).
+The api is 99% built on promises but most method also accepts callbacks.
+Callbacks should respect the node convention and always have this signature:
+
+```js
+function callback(err, returnValue) { ... }
+```
+
+The promise implementation currently used is [rsvp.js](https://github.com/tildeio/rsvp.js).
 
 ## API
 
