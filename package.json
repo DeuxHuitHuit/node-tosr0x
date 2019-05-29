@@ -37,8 +37,8 @@
     "usb"
   ],
   "dependencies": {
-    "lodash": "^2.4.1",
-    "rsvp": "^3.0.14",
-    "serialport": "^1.4.6"
+    "lodash": "^4.17.11",
+    "rsvp": "^4.8.4",
+    "serialport": "^7.1.5"
   }
 }
