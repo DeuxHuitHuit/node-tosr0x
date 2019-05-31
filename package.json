@@ -25,8 +25,7 @@
   },
   "main": "lib/tosr0x.js",
   "engines": {
-    "node": "0.10.x",
-    "npm": "2.0.x"
+    "node": "10"
   },
   "keywords": [
     "tosr0x",
@@ -37,8 +36,8 @@
     "usb"
   ],
   "dependencies": {
+    "bluebird": "^3.5.5",
     "lodash": "^4.17.11",
-    "rsvp": "^4.8.4",
     "serialport": "^7.1.5"
   }
 }

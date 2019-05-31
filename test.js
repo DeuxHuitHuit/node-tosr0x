@@ -1,6 +1,7 @@
 'use strict';
-var Tosr0x = require('./lib/tosr0x').Tosr0x;
-var relay = 1;
+
+const Tosr0x = require('./lib/tosr0x').Tosr0x;
+const relay = 1;
 
 console.log('Locating Tosr0x controller...');
 console.time('[Tosr0x]');
